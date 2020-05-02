@@ -1,4 +1,6 @@
-package store.intent.zerodevelop.packet;
+package store.intent.zerodevelop.packet.client;
+
+import store.intent.zerodevelop.packet.Packet;
 
 public class PacketChat extends Packet {
 

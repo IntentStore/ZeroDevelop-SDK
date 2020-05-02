@@ -1,15 +1,12 @@
-package store.intent.zerodevelop.packet;
+package store.intent.zerodevelop.packet.client;
+
+import store.intent.zerodevelop.packet.Packet;
 
 public class PacketPlayer extends Packet {
 
-	public double x;
-	public double y;
-	public double z;
-    public float yaw;
-    public float pitch;
-    public boolean onGround;
-    public boolean moving;
-    public boolean rotating;
+	public double x, y, z;
+    public float yaw, pitch;
+    public boolean onGround, moving, rotating;
 	
     public PacketPlayer() { }
     

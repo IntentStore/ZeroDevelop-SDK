@@ -1,6 +1,7 @@
-package store.intent.zerodevelop.packet;
+package store.intent.zerodevelop.packet.client;
 
 import store.intent.zerodevelop.entity.Entity;
+import store.intent.zerodevelop.packet.Packet;
 import store.intent.zerodevelop.util.Vec3;
 
 public class PacketInteract extends Packet {

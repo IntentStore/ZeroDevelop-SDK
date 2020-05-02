@@ -4,6 +4,6 @@ import store.intent.zerodevelop.util.Version;
 
 public class ZeroDevelop {
 
-	public static Version version = new Version(1, 0, 0);
+	public static Version version = new Version(1, 1, 0);
 
 }

@@ -118,6 +118,10 @@ public interface Player {
 	
 	void jump();
 	
+	boolean isCollidedHorizontally();
+	
+	boolean isCollidedVertically();
+	
 	boolean isSwingInProgress();
 	
 	boolean isBurning();
