@@ -14,7 +14,7 @@ public class Template extends Module {
 
 	public NumberSetting number = new NumberSetting("Number", "This setting doesn't do anything", 10, 1, 20, 1);
 	public ToggleSetting toggle = new ToggleSetting("Boolean", "This setting also doesn't do anything", true);
-	public ModeSetting mode = new ModeSetting("Mode", "One", new String[] {"One", "Two", "Three"});
+	public ModeSetting mode = new ModeSetting("Mode", "This is a mode setting", "One", new String[] {"One", "Two", "Three"});
 
 	@Override
 	public void registerSettings() {
@@ -25,10 +25,10 @@ public class Template extends Module {
 	
 	@Override
 	public Version getBuildVersion() {
-		/**Return 1.1.0 because that is the version of the SDK we're using.
+		/**Return 1.2.0 because that is the version of the SDK we're using.
 		   It will help us evaluate compatibility when newer versions are available */
 		
-		return new Version(1, 1, 0);
+		return new Version(1, 2, 0);
 	}
 
 	@Override
