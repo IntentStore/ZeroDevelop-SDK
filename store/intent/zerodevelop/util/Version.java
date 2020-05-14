@@ -6,7 +6,7 @@ public class Version {
 
 	//TODO KEEP API UP TO DATE
 	/**
-	 * Current API version is 1.1.0
+	 * Current API version is 1.2.0
 	 * @param major Major Version
 	 * @param minor Minor Version
 	 * @param patch Patch Version

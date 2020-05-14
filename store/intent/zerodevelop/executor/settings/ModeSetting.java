@@ -7,12 +7,6 @@ public class ModeSetting extends Setting {
 
 	public String current;
 	public List<String> names;
-	
-	public ModeSetting(String name, String current, String... names) {
-		super(name);
-		this.current = current;
-		this.names = Arrays.asList(names);
-	}
 
 	public ModeSetting(String name, String description, String current, String... names) {
 		super(name, description);
