@@ -3,6 +3,7 @@ package store.intent.zerodevelop.executor;
 import java.util.ArrayList;
 import java.util.List;
 
+import store.intent.zerodevelop.api.Client;
 import store.intent.zerodevelop.api.GameSettings;
 import store.intent.zerodevelop.api.Player;
 import store.intent.zerodevelop.api.World;
@@ -15,6 +16,7 @@ import store.intent.zerodevelop.util.Version;
 
 public abstract class Module {
 
+	public Client client;
 	public GameSettings gameSettings;
 	public Player player;
 	public World world;
@@ -32,7 +34,7 @@ public abstract class Module {
 
 	//TODO KEEP API UP TO DATE
 	/**
-	 * @return Version of API this module was built with; 1.2.0
+	 * @return Version of API this module was built with; 1.3.0
 	 */
 	public abstract Version getBuildVersion();
 	
@@ -60,13 +62,17 @@ public abstract class Module {
 		world = w;
 	}
 	
+	public void setClient(Client c) {
+		client = c;
+	}
+	
 	public void tick() {
-		if(gameSettings != null && player != null && world != null)
+		if(gameSettings != null && player != null && world != null && client != null)
 			onTick();
 	}
 	
 	public void update() {
-		if(gameSettings != null && player != null && world != null)
+		if(gameSettings != null && player != null && world != null && client != null)
 			onUpdate();
 	}
 	
